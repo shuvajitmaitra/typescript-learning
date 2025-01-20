@@ -6,6 +6,7 @@ import PersonList from "@/src/components/PersonList";
 import Status from "@/src/components/Status";
 import Header from "@/src/components/Header";
 import ParentHeader from "@/src/components/ParentHeader";
+import CustomButton from "@/src/components/Custombutton";
 
 const HomeScreen = () => {
   const name = {
@@ -37,6 +38,7 @@ const HomeScreen = () => {
       <ParentHeader>
         <Header>Hello, I am Parent Header</Header>
       </ParentHeader>
+      <CustomButton title="Click me" handleClick={(event, id) => console.log(event, id)} />
     </View>
   );
 };
