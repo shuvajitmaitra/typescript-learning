@@ -8,7 +8,18 @@ import Header from "@/src/components/Header";
 import ParentHeader from "@/src/components/ParentHeader";
 import CustomButton from "@/src/components/Custombutton";
 
-const HomeScreen = () => {
+interface HomeScreenProps {
+  name: {
+    first: string;
+    last: string;
+  };
+  names: {
+    first: string;
+    last: string;
+  }[];
+}
+
+const HomeScreen: React.FC<HomeScreenProps> = () => {
   const name = {
     first: "Shuvajit",
     last: "Maitra",
